@@ -1,8 +1,15 @@
-li {
+
+  ul.a {list-style-type: circle;
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7
+}
+  ul.b {list-style-type: square;
     padding: 5px;
     margin: 5px;
     background: #faebd7;
-  }
+}
+ 
   
   .label {
     font-weight: bold;
@@ -13,3 +20,62 @@ li {
     margin: 5px;
     background: aqua;
   }
+
+  body {
+    background-color: lightblue;
+  }
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+h2 {
+    color: purple;
+    text-align: left;
+  }
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+
+.myDiv1 {
+    width: 35px;
+     height: 5px;
+     background-color: brown;
+     
+    
+   }
+   
+   .myDiv2 {
+    width: 35px;
+     height: 5px;
+     background-color: red;
+    
+   }
+   
+   .myDiv3 {
+     width: 35px;
+     height: 5px;
+     background-color: green;
+     
+   }
+   
+   .myDiv4 {
+     width: 35px;
+     height: 5px;
+     background-color: yellow;
+     
+   }
+   .myDiv5 {
+     width: 35px;
+     height: 5px;
+     background-color: brown;
+     
+    
+   }
+ 
+  
+ 

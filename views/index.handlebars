@@ -1,8 +1,15 @@
+
+
 <h1>Cats_Burgers!</h1>
+<div class="myDiv1"></div>
+<div class="myDiv2"></div>
+<div class="myDiv3"></div>
+<div class="myDiv4"></div>
+<div class="myDiv5"></div>
 
 <h2>Cats_Burgers that are not sleepy_devour it!</h2>
 
-<ul>
+<ul class="a">
   {{#each cats}}
     {{#unless sleepy}}
       {{> cats/cat-block sleep=true}}
@@ -10,9 +17,11 @@
   {{/each}}
 </ul>
 
+
+
 <h2>cats_burger that are sleepy_well!</h2>
 
-<ul>
+<ul class="b">
   {{#each cats}}
     {{#if sleepy}}
       {{> cats/cat-block sleep=false}}
