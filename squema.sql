@@ -1,15 +1,15 @@
 
 -- Drops the wishes_db if it already exists --
-DROP DATABASE IF EXISTS wishes_db;
+DROP DATABASE IF EXISTS cat_db;
+### Schema
 
--- Create the database wishes_db and specified it for use.
-CREATE DATABASE wishes_db;
+CREATE DATABASE cat_db;
+USE cat_db;
 
-USE wishes_db;
-
--- Create the table wishes.
-CREATE TABLE wishes (
-  id int NOT NULL AUTO_INCREMENT,
-  wish varchar(255) NOT NULL,
-  PRIMARY KEY (id)
+CREATE TABLE cats
+(
+	id int NOT NULL AUTO_INCREMENT,
+	name varchar(255) NOT NULL,
+	sleepy BOOLEAN DEFAULT false,
+	PRIMARY KEY (id)
 );

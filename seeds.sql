@@ -1,4 +1,7 @@
 -- Insert a set of records.
-INSERT INTO wishes (wish) VALUES ('Shaan wants to read minds.');
-INSERT INTO wishes (wish) VALUES ('John wins the lottery.');
-INSERT INTO wishes (wish) VALUES ('Kelly wishes for a room full of kittens.');
+INSERT INTO cats (name) VALUES ('Molly');
+INSERT INTO cats (name) VALUES ('Charlie');
+INSERT INTO cats (name, sleepy) VALUES ('Poppy', true);
+INSERT INTO cats (name, sleepy) VALUES ('Oscar', true);
+INSERT INTO cats (name, sleepy) VALUES ('Smudge', true);
+INSERT INTO cats (name) VALUES ('Daisy');
