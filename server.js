@@ -34,7 +34,7 @@ connection.connect(function(err) {
 
 // Root get route
 app.get("/", function(req, res) {
-  connection.query("SELECT * FROM wish;", function(err, data) {
+  connection.query("SELECT * FROM wishes;", function(err, data) {
     if (err) throw err;
 
     // Test it
@@ -43,7 +43,7 @@ app.get("/", function(req, res) {
     // Test it
     // return res.send(data);
 
-    res.render("index", { wish: data });
+    res.render("index", { wishes: data });
   });
 });
 
@@ -59,7 +59,7 @@ app.post("/", function(req, res) {
   // This helps us avoid an exploit known as SQL injection which we'd be open to if we used string concatenation
   // https://en.wikipedia.org/wiki/SQL_injection
   //  
-  connection.query("INSERT INTO wish (wishes) VALUES (?)", [req.body.wish], function(err, result) {
+  connection.query("INSERT INTO wishes (wish) VALUES (?)", [req.body.wish], function(err, result) {
     if (err) throw err;
 
     res.redirect("/");
